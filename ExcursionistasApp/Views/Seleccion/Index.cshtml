@@ -1,0 +1,52 @@
+@model ExcursionistasApp.Models.SeleccionParametros
+@{
+    ViewData["Title"] = "Selección de elementos óptimos";
+    var resultado = ViewBag.Resultado as ExcursionistasApp.Models.SeleccionResultado;
+    var elementos = ViewBag.Elementos as List<ExcursionistasApp.Models.Elemento>;
+}
+<h2>Selección de elementos óptimos</h2>
+<form asp-action="Index" method="post">
+    <div class="form-group">
+        <label>Mínimo de calorías:</label>
+        <input type="number" name="MinimoCalorias" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Peso máximo:</label>
+        <input type="number" name="PesoMaximo" class="form-control" required />
+    </div>
+    <h4>Elementos</h4>
+    <div id="elementos-list">
+        @for (int i = 0; i < 5; i++)
+        {
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="text" name="elementos[@i].Nombre" class="form-control" placeholder="Nombre" required />
+                </div>
+                <div class="col">
+                    <input type="number" name="elementos[@i].Peso" class="form-control" placeholder="Peso" required />
+                </div>
+                <div class="col">
+                    <input type="number" name="elementos[@i].Calorias" class="form-control" placeholder="Calorías" required />
+                </div>
+            </div>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular selección óptima</button>
+</form>
+@if (resultado != null && resultado.ElementosSeleccionados.Any())
+{
+    <hr />
+    <h4>Resultado óptimo</h4>
+    <ul>
+        @foreach (var el in resultado.ElementosSeleccionados)
+        {
+            <li>@el.Nombre - Peso: @el.Peso, Calorías: @el.Calorias</li>
+        }
+    </ul>
+    <p><strong>Peso total:</strong> @resultado.PesoTotal</p>
+    <p><strong>Calorías totales:</strong> @resultado.CaloriasTotales</p>
+}
+else if (resultado != null)
+{
+    <p class="text-danger">No hay combinación que cumpla los requisitos.</p>
+}
