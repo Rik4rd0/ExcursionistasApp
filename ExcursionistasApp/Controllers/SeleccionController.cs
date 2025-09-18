@@ -30,7 +30,7 @@ namespace ExcursionistasApp.Controllers
             int mejorPeso = int.MaxValue;
             int mejorCalorias = 0;
 
-            // Generar todas las combinaciones posibles
+            // combinaciones posibles
             for (int i = 1; i < (1 << n); i++)
             {
                 var seleccion = new List<Elemento>();

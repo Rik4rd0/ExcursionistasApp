@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExcursionistasApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54ddb57409baa653ed1a7dd20e3f225ed77520ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExcursionistasApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExcursionistasApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

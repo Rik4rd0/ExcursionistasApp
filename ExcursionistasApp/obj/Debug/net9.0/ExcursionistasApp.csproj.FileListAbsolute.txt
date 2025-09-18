@@ -94,3 +94,4 @@ C:\Users\rickm\OneDrive\Documentos\GitHub\ExcursionistasApp\ExcursionistasApp\ob
 C:\Users\rickm\OneDrive\Documentos\GitHub\ExcursionistasApp\ExcursionistasApp\obj\Debug\net9.0\ExcursionistasApp.genruntimeconfig.cache
 C:\Users\rickm\OneDrive\Documentos\GitHub\ExcursionistasApp\ExcursionistasApp\obj\Debug\net9.0\ref\ExcursionistasApp.dll
 C:\Users\rickm\OneDrive\Documentos\GitHub\ExcursionistasApp\ExcursionistasApp\obj\Debug\net9.0\compressed\7ykpaqgxcy-j9d6vfxhbx.gz
+C:\Users\rickm\OneDrive\Documentos\GitHub\ExcursionistasApp\ExcursionistasApp\obj\Debug\net9.0\ExcursionistasApp.sourcelink.json
